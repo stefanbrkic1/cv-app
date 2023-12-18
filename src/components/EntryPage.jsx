@@ -19,7 +19,9 @@ function EntryPage() {
 
       {/* Footer section */}
       <footer className="footer">
-        <a href="http://">@stefanbrkic1</a>
+        <a href="https://github.com/stefanbrkic1" target="blank">
+          @stefanbrkic1
+        </a>
         <div className="github-logo"></div>
       </footer>
     </div>
