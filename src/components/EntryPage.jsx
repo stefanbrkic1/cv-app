@@ -1,6 +1,4 @@
-import { useState, Fragment } from "react";
-
-function EntryPage() {
+function EntryPage({ handleContent }) {
   return (
     <div className="entry-container">
       {/* Header section */}
@@ -12,7 +10,7 @@ function EntryPage() {
         <h2 className="heading-subtext">
           Build beautiful resumes easily with our app and land your dream job
         </h2>
-        <button type="button" className="start-btn">
+        <button type="button" className="start-btn" onClick={handleContent}>
           Get Started
         </button>
       </main>
