@@ -3,11 +3,6 @@
   src: url(../assets/fonts/Montserrat-Regular.ttf);
 }
 
-@font-face {
-  font-family: "MontserratBlack";
-  src: url(../assets/fonts/Montserrat-Black.ttf);
-}
-
 :root {
   --primary-color: #5281ce;
   --secondary-color: #ff9a9f;
@@ -20,7 +15,7 @@
   --text-dark: #212427;
 
   --primary-font-regular: "Montserrat", sans-serif;
-  --primary-font-bold: "MontserratBold", sans-serif;
+  --heading-font-bold: "Helvetica", sans-serif;
 }
 
 * {
@@ -145,7 +140,6 @@ a {
   border: none;
   outline: none;
   font-size: 23rem;
-  font-weight: 600;
   border-radius: 20px;
   padding: 16px 60px;
   background-color: var(--tertiary-color);
@@ -153,7 +147,8 @@ a {
   transition: all 200ms ease-in-out;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: var(--primary-font-bold);
+  font-family: var(--primary-font-regular);
+  font-weight: 600;
 }
 
 .start-btn:hover {
@@ -162,14 +157,14 @@ a {
 }
 
 .heading-text {
-  font-family: var(--primary-font-bold);
-  font-size: 80rem;
   font-weight: 1000;
+  font-family: var(--heading-font-bold);
+  font-size: 70rem;
   margin-bottom: 8px;
 }
 
 .heading-subtext {
-  font-size: 30rem;
+  font-size: 25rem;
 }
 
 /*Media Queries*/
