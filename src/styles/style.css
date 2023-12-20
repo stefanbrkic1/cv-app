@@ -282,13 +282,13 @@ a {
   color: var(--text-color);
 }
 
-.example-btn {
+.download-btn {
   padding: 6px 20px;
   appearance: none;
   border: none;
   border-radius: 6px;
   font-size: 16rem;
-  background-color: #7f7f98;
+  background-color: var(--tertiary-color);
   cursor: pointer;
   color: var(--text-color);
 }
@@ -333,6 +333,12 @@ a {
   background-color: #eeeeee;
   margin-top: 5px;
   font-size: 16rem;
+  transition: border 300ms ease-in-out;
+  border: 2px solid transparent;
+}
+
+.input-styling:focus {
+  border: 2px solid var(--tertiary-color);
 }
 
 /*Media Queries*/

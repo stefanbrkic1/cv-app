@@ -1,8 +1,24 @@
 import { useState } from "react";
 import PersonalDetails from "./PersonalDetails";
+import Education from "./Education";
+import Experience from "./Experience";
 
 function ResumePage() {
   const [activeDropdown, setActiveDropdown] = useState(0);
+
+  function handleDropdownClick(dropdown) {
+    switch (dropdown) {
+      case 0:
+        setActiveDropdown(0);
+        break;
+      case 1:
+        setActiveDropdown(1);
+        break;
+      case 2:
+        setActiveDropdown(2);
+        break;
+    }
+  }
 
   return (
     <div className="resume-container">
@@ -14,11 +30,11 @@ function ResumePage() {
           </div>
           <div className="nav-right">
             <button className="clear-btn">Clear</button>
-            <button className="example-btn">Load Example</button>
+            <button className="download-btn">PDF</button>
           </div>
         </nav>
         {/* Dropdowns section */}
-        <div className="dropdown">
+        <div className="dropdown" onClick={() => handleDropdownClick(0)}>
           <div className="dropdown-left">
             <div className="user-icon"></div>
             <div className="dropdown-text">Personal Details</div>
@@ -28,7 +44,7 @@ function ResumePage() {
           </div>
         </div>
         {activeDropdown === 0 && <PersonalDetails />}
-        <div className="dropdown">
+        <div className="dropdown" onClick={() => handleDropdownClick(1)}>
           <div className="dropdown-left">
             <div className="education-icon"></div>
             <div className="dropdown-text">Education</div>
@@ -37,7 +53,8 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        <div className="dropdown">
+        {activeDropdown === 1 && <Education />}
+        <div className="dropdown" onClick={() => handleDropdownClick(2)}>
           <div className="dropdown-left">
             <div className="experience-icon"></div>
             <div className="dropdown-text">Experience</div>
@@ -46,6 +63,7 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
+        {activeDropdown === 2 && <Experience />}
       </section>
 
       {/* Resume displayer section */}
