@@ -195,6 +195,10 @@ a {
   border-bottom-right-radius: 0px !important;
 }
 
+.dropdown-active .caret {
+  transform: rotate(180deg);
+}
+
 .dropdown-left {
   display: flex;
   justify-content: center;
