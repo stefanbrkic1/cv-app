@@ -7,16 +7,20 @@ function ResumePage() {
   const [activeDropdown, setActiveDropdown] = useState(0);
 
   function handleDropdownClick(dropdown) {
-    switch (dropdown) {
-      case 0:
-        setActiveDropdown(0);
-        break;
-      case 1:
-        setActiveDropdown(1);
-        break;
-      case 2:
-        setActiveDropdown(2);
-        break;
+    if (dropdown === activeDropdown) {
+      setActiveDropdown(null);
+    } else {
+      switch (dropdown) {
+        case 0:
+          setActiveDropdown(0);
+          break;
+        case 1:
+          setActiveDropdown(1);
+          break;
+        case 2:
+          setActiveDropdown(2);
+          break;
+      }
     }
   }
 
