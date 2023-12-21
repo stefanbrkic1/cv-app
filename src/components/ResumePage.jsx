@@ -24,6 +24,41 @@ function ResumePage() {
     }
   }
 
+  const [experienceData, setExperienceData] = useState({
+    companyName: "",
+    positionTitle: "",
+    location: "",
+    startDate: "",
+    endDate: "",
+  });
+
+  const [personalDetailsData, setPersonalDetailsData] = useState({
+    fullName: "",
+    email: "",
+    phoneNumber: "",
+    address: "",
+  });
+
+  const [educationData, setEducationData] = useState({
+    school: "",
+    degree: "",
+    location: "",
+    startDate: "",
+    endDate: "",
+  });
+
+  function handleInputValue(caller, property, value) {
+    if (caller === "personalDetails") {
+      setPersonalDetailsData({ ...personalDetailsData, [property]: value });
+    }
+    if (caller === "education") {
+      setEducationData({ ...educationData, [property]: value });
+    }
+    if (caller === "experience") {
+      setExperienceData({ ...experienceData, [property]: value });
+    }
+  }
+
   return (
     <div className="resume-container">
       <section className="container-left">
@@ -52,7 +87,12 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        {activeDropdown === 0 && <PersonalDetails />}
+        {activeDropdown === 0 && (
+          <PersonalDetails
+            handleInputValue={handleInputValue}
+            personalDetailsData={personalDetailsData}
+          />
+        )}
         <div
           className={`dropdown ${
             activeDropdown === 1 ? "dropdown-active" : ""
@@ -67,7 +107,12 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        {activeDropdown === 1 && <Education />}
+        {activeDropdown === 1 && (
+          <Education
+            handleInputValue={handleInputValue}
+            educationData={educationData}
+          />
+        )}
         <div
           className={`dropdown ${
             activeDropdown === 2 ? "dropdown-active" : ""
@@ -82,7 +127,12 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        {activeDropdown === 2 && <Experience />}
+        {activeDropdown === 2 && (
+          <Experience
+            handleInputValue={handleInputValue}
+            experienceData={experienceData}
+          />
+        )}
       </section>
 
       {/* Resume displayer section */}
