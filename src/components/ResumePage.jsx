@@ -34,7 +34,12 @@ function ResumePage() {
           </div>
         </nav>
         {/* Dropdowns section */}
-        <div className="dropdown" onClick={() => handleDropdownClick(0)}>
+        <div
+          className={`dropdown ${
+            activeDropdown === 0 ? "dropdown-active" : ""
+          }`}
+          onClick={() => handleDropdownClick(0)}
+        >
           <div className="dropdown-left">
             <div className="user-icon"></div>
             <div className="dropdown-text">Personal Details</div>
@@ -44,7 +49,12 @@ function ResumePage() {
           </div>
         </div>
         {activeDropdown === 0 && <PersonalDetails />}
-        <div className="dropdown" onClick={() => handleDropdownClick(1)}>
+        <div
+          className={`dropdown ${
+            activeDropdown === 1 ? "dropdown-active" : ""
+          }`}
+          onClick={() => handleDropdownClick(1)}
+        >
           <div className="dropdown-left">
             <div className="education-icon"></div>
             <div className="dropdown-text">Education</div>
@@ -54,7 +64,12 @@ function ResumePage() {
           </div>
         </div>
         {activeDropdown === 1 && <Education />}
-        <div className="dropdown" onClick={() => handleDropdownClick(2)}>
+        <div
+          className={`dropdown ${
+            activeDropdown === 2 ? "dropdown-active" : ""
+          }`}
+          onClick={() => handleDropdownClick(2)}
+        >
           <div className="dropdown-left">
             <div className="experience-icon"></div>
             <div className="dropdown-text">Experience</div>

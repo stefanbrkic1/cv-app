@@ -1,6 +1,6 @@
 function Experience() {
   return (
-    <div className="personal-details">
+    <div className="dropdown-content">
       <div className="flex pb-5">
         <div className="input-field">
           <label htmlFor="companyName" className="display-block">

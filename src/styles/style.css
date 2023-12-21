@@ -82,7 +82,6 @@ body {
   display: flex;
   justify-content: baseline;
   align-items: center;
-  gap: 15px;
   flex-direction: column;
 }
 
@@ -188,6 +187,12 @@ a {
   align-items: center;
   cursor: pointer;
   position: relative;
+  margin-top: 20px;
+}
+
+.dropdown-active {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
 }
 
 .dropdown-left {
@@ -293,10 +298,9 @@ a {
   color: var(--text-color);
 }
 
-.personal-details {
+.dropdown-content {
   width: 100%;
   background-color: white;
-  transform: translateY(-26px);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 10px 20px 40px 20px;
