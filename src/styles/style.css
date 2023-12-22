@@ -69,10 +69,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/img/background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .container-left {
@@ -84,6 +80,9 @@ body {
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
+  background-image: url(../assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-right {
@@ -103,6 +102,8 @@ body {
   max-height: 701px;
   aspect-ratio: 1 / 1.4142;
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
 .header,
@@ -392,6 +393,97 @@ a {
 
 .about-section textarea:focus {
   border: 2px solid var(--text-secondary-color);
+}
+
+.resume-header {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-header-left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  color: var(--text-color);
+}
+
+.resume-header-right {
+  font-size: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  color: var(--text-color);
+  gap: 7px;
+}
+
+.image-container {
+  width: 73px;
+  height: 73px;
+  background-image: url(../assets/img/user-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.flex-column {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.position-title {
+  font-size: 13rem;
+}
+
+.fullname {
+  font-weight: bold;
+  font-size: 18rem;
+}
+
+.icon-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.email-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url(../assets/img/email.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.address-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url(../assets/img/location.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.phone-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url(../assets/img/phone.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /*Media Queries*/

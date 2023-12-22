@@ -148,7 +148,13 @@ function ResumePage() {
       </section>
 
       {/* Resume displayer section */}
-      <Resume />
+      <section className="container-right">
+        <Resume
+          personalDetailsData={personalDetailsData}
+          educationData={educationData}
+          experienceData={experienceData}
+        />
+      </section>
     </div>
   );
 }

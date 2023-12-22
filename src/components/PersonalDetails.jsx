@@ -34,20 +34,6 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
 
       <div className="flex">
         <div className="input-field">
-          <label htmlFor="phone" className="display-block">
-            Phone Number
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            className="input-styling"
-            value={personalDetailsData.phoneNumber}
-            onChange={(e) =>
-              handleInputValue("personalDetails", "phoneNumber", e.target.value)
-            }
-          />
-        </div>
-        <div className="input-field">
           <label htmlFor="address" className="display-block">
             Address
           </label>
@@ -58,6 +44,20 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             value={personalDetailsData.address}
             onChange={(e) =>
               handleInputValue("personalDetails", "address", e.target.value)
+            }
+          />
+        </div>
+        <div className="input-field">
+          <label htmlFor="phone" className="display-block">
+            Phone Number
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            className="input-styling"
+            value={personalDetailsData.phoneNumber}
+            onChange={(e) =>
+              handleInputValue("personalDetails", "phoneNumber", e.target.value)
             }
           />
         </div>
