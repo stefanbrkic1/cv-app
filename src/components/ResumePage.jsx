@@ -2,25 +2,28 @@ import { useState } from "react";
 import PersonalDetails from "./PersonalDetails";
 import Education from "./Education";
 import Experience from "./Experience";
+import Resume from "./Resume";
 
 function ResumePage() {
-  const [activeDropdown, setActiveDropdown] = useState(0);
+  const [personalDropdown, setPersonalDropdown] = useState(0);
+  const [educationDropdown, setEducationDropdown] = useState(0);
+  const [experienceDropdown, setExperienceDropdown] = useState(0);
 
-  function handleDropdownClick(dropdown) {
-    if (dropdown === activeDropdown) {
-      setActiveDropdown(null);
-    } else {
-      switch (dropdown) {
-        case 0:
-          setActiveDropdown(0);
-          break;
-        case 1:
-          setActiveDropdown(1);
-          break;
-        case 2:
-          setActiveDropdown(2);
-          break;
-      }
+  function handleDropdownClick(caller) {
+    if (caller === "personalDropdown") {
+      personalDropdown === 0 ? setPersonalDropdown(1) : setPersonalDropdown(0);
+    }
+
+    if (caller === "educationDropdown") {
+      educationDropdown === 0
+        ? setEducationDropdown(1)
+        : setEducationDropdown(0);
+    }
+
+    if (caller === "experienceDropdown") {
+      experienceDropdown === 0
+        ? setExperienceDropdown(1)
+        : setExperienceDropdown(0);
     }
   }
 
@@ -79,9 +82,9 @@ function ResumePage() {
         {/* Dropdowns section */}
         <div
           className={`dropdown ${
-            activeDropdown === 0 ? "dropdown-active" : ""
+            personalDropdown === 1 ? "dropdown-active" : ""
           }`}
-          onClick={() => handleDropdownClick(0)}
+          onClick={() => handleDropdownClick("personalDropdown")}
         >
           <div className="dropdown-left">
             <div className="user-icon"></div>
@@ -91,7 +94,7 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        {activeDropdown === 0 && (
+        {personalDropdown === 1 && (
           <PersonalDetails
             handleInputValue={handleInputValue}
             personalDetailsData={personalDetailsData}
@@ -99,9 +102,9 @@ function ResumePage() {
         )}
         <div
           className={`dropdown ${
-            activeDropdown === 1 ? "dropdown-active" : ""
+            educationDropdown === 1 ? "dropdown-active" : ""
           }`}
-          onClick={() => handleDropdownClick(1)}
+          onClick={() => handleDropdownClick("educationDropdown")}
         >
           <div className="dropdown-left">
             <div className="education-icon"></div>
@@ -111,7 +114,7 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        {activeDropdown === 1 && (
+        {educationDropdown === 1 && (
           <Education
             handleInputValue={handleInputValue}
             educationData={educationData}
@@ -119,9 +122,9 @@ function ResumePage() {
         )}
         <div
           className={`dropdown ${
-            activeDropdown === 2 ? "dropdown-active" : ""
+            experienceDropdown === 1 ? "dropdown-active" : ""
           }`}
-          onClick={() => handleDropdownClick(2)}
+          onClick={() => handleDropdownClick("experienceDropdown")}
         >
           <div className="dropdown-left">
             <div className="experience-icon"></div>
@@ -131,7 +134,7 @@ function ResumePage() {
             <div className="caret"></div>
           </div>
         </div>
-        {activeDropdown === 2 && (
+        {experienceDropdown === 1 && (
           <Experience
             handleInputValue={handleInputValue}
             experienceData={experienceData}
@@ -140,9 +143,7 @@ function ResumePage() {
       </section>
 
       {/* Resume displayer section */}
-      <section className="container-right">
-        <div className="resume"></div>
-      </section>
+      <Resume />
     </div>
   );
 }
