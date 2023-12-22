@@ -68,8 +68,12 @@ function ResumePage() {
             <div className="logo">Resumify</div>
           </div>
           <div className="nav-right">
-            <button className="clear-btn">Clear</button>
-            <button className="download-btn">PDF</button>
+            <button className="clear-btn">
+              Clear <div className="clear-icon"></div>
+            </button>
+            <button className="download-btn">
+              PDF<div className="download-icon"></div>
+            </button>
           </div>
         </nav>
         {/* Dropdowns section */}

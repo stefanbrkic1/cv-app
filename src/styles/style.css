@@ -195,6 +195,14 @@ a {
   border-bottom-right-radius: 0px !important;
 }
 
+.dropdown-content {
+  width: 100%;
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px 20px 40px 20px;
+}
+
 .dropdown-active .caret {
   transform: rotate(180deg);
 }
@@ -289,10 +297,13 @@ a {
   background-color: #f7665f;
   cursor: pointer;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .download-btn {
-  padding: 6px 20px;
+  padding: 6px 10px 6px 10px;
   appearance: none;
   border: none;
   border-radius: 6px;
@@ -300,14 +311,19 @@ a {
   background-color: var(--tertiary-color);
   cursor: pointer;
   color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
-.dropdown-content {
-  width: 100%;
-  background-color: white;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  padding: 10px 20px 40px 20px;
+.download-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../assets/img/download.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .display-block {
