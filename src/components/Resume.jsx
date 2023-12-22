@@ -1,4 +1,9 @@
-function Resume({ personalDetailsData, educationData, experienceData }) {
+function Resume({
+  personalDetailsData,
+  educationData,
+  experienceData,
+  aboutText,
+}) {
   return (
     <div className="resume">
       {/*Resume Header Section*/}
@@ -29,6 +34,58 @@ function Resume({ personalDetailsData, educationData, experienceData }) {
       </div>
 
       {/*Resume Body Section*/}
+      <div className="resume-body">
+        {/*Education Section*/}
+        <div className="resume-section">
+          <div className="resume-heading">
+            <div className="heading-line"></div>
+            <div className="heading-title">EDUCATION</div>
+          </div>
+          <div className="resume-section-content">
+            <div className="school-resume">
+              {educationData.school} {educationData.location !== "" && ", "}
+              <span className="school-location">{educationData.location}</span>
+            </div>
+            <div className="degree-resume">{educationData.degree}</div>
+            <div className="school-date">
+              {educationData.startDate}{" "}
+              {educationData.startDate !== "" && " / "} {educationData.endDate}
+            </div>
+          </div>
+        </div>
+
+        {/*Experience Section*/}
+        <div className="resume-section">
+          <div className="resume-heading">
+            <div className="heading-line"></div>
+            <div className="heading-title">EXPERIENCE</div>
+          </div>
+          <div className="resume-section-content">
+            <div className="school-resume">
+              {experienceData.companyName}
+              <span className="school-location">
+                {experienceData.location !== "" && ", "}
+                {experienceData.location}
+              </span>
+            </div>
+            <div className="degree-resume">{experienceData.positionTitle}</div>
+            <div className="school-date">
+              {experienceData.startDate}
+              {experienceData.startDate !== "" && " / "}{" "}
+              {experienceData.endDate}
+            </div>
+          </div>
+        </div>
+
+        {/*About Me Section*/}
+        <div className="resume-section">
+          <div className="resume-heading">
+            <div className="heading-line"></div>
+            <div className="heading-title">ABOUT ME</div>
+          </div>
+          <div className="resume-section-content">{aboutText}</div>
+        </div>
+      </div>
     </div>
   );
 }

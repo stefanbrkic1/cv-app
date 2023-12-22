@@ -17,23 +17,6 @@ function Education({ handleInputValue, educationData }) {
           />
         </div>
         <div className="input-field">
-          <label htmlFor="degree" className="display-block">
-            Degree
-          </label>
-          <input
-            type="text"
-            id="degree"
-            className="input-styling"
-            value={educationData.degree}
-            onChange={(e) =>
-              handleInputValue("education", "degree", e.target.value)
-            }
-          />
-        </div>
-      </div>
-
-      <div className="flex">
-        <div className="input-field">
           <label htmlFor="location" className="display-block">
             Location
           </label>
@@ -44,6 +27,23 @@ function Education({ handleInputValue, educationData }) {
             value={educationData.location}
             onChange={(e) =>
               handleInputValue("education", "location", e.target.value)
+            }
+          />
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="input-field">
+          <label htmlFor="degree" className="display-block">
+            Degree
+          </label>
+          <input
+            type="text"
+            id="degree"
+            className="input-styling"
+            value={educationData.degree}
+            onChange={(e) =>
+              handleInputValue("education", "degree", e.target.value)
             }
           />
         </div>

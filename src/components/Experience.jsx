@@ -17,23 +17,6 @@ function Experience({ handleInputValue, experienceData }) {
           />
         </div>
         <div className="input-field">
-          <label htmlFor="position" className="display-block">
-            Position Title
-          </label>
-          <input
-            type="text"
-            id="position"
-            className="input-styling"
-            value={experienceData.positionTitle}
-            onChange={(e) =>
-              handleInputValue("experience", "positionTitle", e.target.value)
-            }
-          />
-        </div>
-      </div>
-
-      <div className="flex">
-        <div className="input-field">
           <label htmlFor="companyLocation" className="display-block">
             Location
           </label>
@@ -44,6 +27,23 @@ function Experience({ handleInputValue, experienceData }) {
             value={experienceData.location}
             onChange={(e) =>
               handleInputValue("experience", "location", e.target.value)
+            }
+          />
+        </div>
+      </div>
+
+      <div className="flex">
+        <div className="input-field">
+          <label htmlFor="position" className="display-block">
+            Position Title
+          </label>
+          <input
+            type="text"
+            id="position"
+            className="input-styling"
+            value={experienceData.positionTitle}
+            onChange={(e) =>
+              handleInputValue("experience", "positionTitle", e.target.value)
             }
           />
         </div>

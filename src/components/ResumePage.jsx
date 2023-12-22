@@ -8,6 +8,7 @@ function ResumePage() {
   const [personalDropdown, setPersonalDropdown] = useState(1);
   const [educationDropdown, setEducationDropdown] = useState(0);
   const [experienceDropdown, setExperienceDropdown] = useState(0);
+  const [aboutText, setAboutText] = useState("");
 
   function handleDropdownClick(caller) {
     if (caller === "personalDropdown") {
@@ -141,7 +142,13 @@ function ResumePage() {
           />
         )}
         <div className="about-section">
-          <textarea name="about" id="aboutText" cols="30" rows="10">
+          <textarea
+            name="about"
+            id="aboutText"
+            cols="30"
+            rows="10"
+            onInput={(e) => setAboutText(e.target.value)}
+          >
             Write about yourself
           </textarea>
         </div>
@@ -153,6 +160,7 @@ function ResumePage() {
           personalDetailsData={personalDetailsData}
           educationData={educationData}
           experienceData={experienceData}
+          aboutText={aboutText}
         />
       </section>
     </div>
