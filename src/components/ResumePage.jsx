@@ -5,7 +5,7 @@ import Experience from "./Experience";
 import Resume from "./Resume";
 
 function ResumePage() {
-  const [personalDropdown, setPersonalDropdown] = useState(0);
+  const [personalDropdown, setPersonalDropdown] = useState(1);
   const [educationDropdown, setEducationDropdown] = useState(0);
   const [experienceDropdown, setExperienceDropdown] = useState(0);
 
@@ -140,6 +140,11 @@ function ResumePage() {
             experienceData={experienceData}
           />
         )}
+        <div className="about-section">
+          <textarea name="about" id="aboutText" cols="30" rows="10">
+            Write about yourself
+          </textarea>
+        </div>
       </section>
 
       {/* Resume displayer section */}
