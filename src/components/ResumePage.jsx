@@ -4,7 +4,7 @@ import Education from "./Education";
 import Experience from "./Experience";
 import Resume from "./Resume";
 
-function ResumePage() {
+function ResumePage({ handleContent }) {
   const [personalDropdown, setPersonalDropdown] = useState(1);
   const [educationDropdown, setEducationDropdown] = useState(0);
   const [experienceDropdown, setExperienceDropdown] = useState(0);
@@ -133,7 +133,9 @@ function ResumePage() {
         {/* Navbar section */}
         <nav className="nav-bar">
           <div className="nav-left">
-            <div className="logo">Resumify</div>
+            <div className="logo" onClick={handleContent}>
+              Resumify
+            </div>
           </div>
           <div className="nav-right">
             <button className="load-example-btn" onClick={loadExample}>

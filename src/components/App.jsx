@@ -12,7 +12,7 @@ function App() {
   if (content === 0) {
     return <EntryPage handleContent={handleContent} />;
   } else {
-    return <ResumePage />;
+    return <ResumePage handleContent={handleContent} />;
   }
 }
 
