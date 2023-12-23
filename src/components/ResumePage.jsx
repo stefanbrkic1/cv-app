@@ -247,10 +247,9 @@ function ResumePage({ handleContent }) {
             id="aboutTextInput"
             cols="30"
             rows="10"
+            defaultValue={"Write about yourself..."}
             onInput={(e) => setAboutText(e.target.value)}
-          >
-            Write about yourself...
-          </textarea>
+          ></textarea>
         </div>
 
         {/*Styling Section */}
