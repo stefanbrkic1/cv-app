@@ -289,6 +289,30 @@ a {
   font-size: 20rem;
 }
 
+.load-example-btn {
+  padding: 6px 10px 6px 10px;
+  appearance: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 16rem;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.load-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../assets/img/example.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .clear-btn {
   padding: 6px 20px;
   appearance: none;

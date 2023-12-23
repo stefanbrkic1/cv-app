@@ -28,14 +28,6 @@ function ResumePage() {
     }
   }
 
-  const [experienceData, setExperienceData] = useState({
-    companyName: "",
-    positionTitle: "",
-    location: "",
-    startDate: "",
-    endDate: "",
-  });
-
   const [personalDetailsData, setPersonalDetailsData] = useState({
     fullName: "",
     email: "",
@@ -46,6 +38,14 @@ function ResumePage() {
   const [educationData, setEducationData] = useState({
     school: "",
     degree: "",
+    location: "",
+    startDate: "",
+    endDate: "",
+  });
+
+  const [experienceData, setExperienceData] = useState({
+    companyName: "",
+    positionTitle: "",
     location: "",
     startDate: "",
     endDate: "",
@@ -63,6 +63,37 @@ function ResumePage() {
     }
   }
 
+  function loadExample() {
+    setPersonalDetailsData({
+      fullName: "Stefan Brkic",
+      email: "stefanbrkicdzn.contact@gmail.com",
+      phoneNumber: "062/ 8724091",
+      address: "Milutina Milankovica 230",
+    });
+
+    setEducationData({
+      school: "Tech University",
+      degree: "Bachelor of Science in Computer Science",
+      location: "Silicon Valley, CA",
+      startDate: "2015-01-01",
+      endDate: "2018-05-23",
+    });
+
+    setExperienceData({
+      companyName: "Tech Solutions",
+      positionTitle: "Frontend Developer",
+      location: "Belgrade, Serbia",
+      startDate: "2019-05-01",
+      endDate: "2023-10-23",
+    });
+
+    setAboutText(
+      "Results-driven and highly motivated professional with a proven track record in [Your Industry/Field]. Possessing a unique blend of technical expertise, strategic thinking, and effective communication skills, I am dedicated to delivering outstanding results in dynamic and challenging environments. With a passion for [Key Interest or Skill], I consistently strive for excellence and thrive on tackling new challenges. Known for my collaborative approach, adaptability, and commitment to achieving organizational goals, I am confident in my ability to contribute positively to any team."
+    );
+
+    aboutTextInput.value = aboutText;
+  }
+
   return (
     <div className="resume-container">
       <section className="container-left">
@@ -72,6 +103,10 @@ function ResumePage() {
             <div className="logo">Resumify</div>
           </div>
           <div className="nav-right">
+            <button className="load-example-btn" onClick={loadExample}>
+              <div className="load-icon"></div>
+              <div className="load-text">Example</div>
+            </button>
             <button className="clear-btn">
               Clear <div className="clear-icon"></div>
             </button>
@@ -80,6 +115,7 @@ function ResumePage() {
             </button>
           </div>
         </nav>
+
         {/* Dropdowns section */}
         <div
           className={`dropdown ${
@@ -144,7 +180,7 @@ function ResumePage() {
         <div className="about-section">
           <textarea
             name="about"
-            id="aboutText"
+            id="aboutTextInput"
             cols="30"
             rows="10"
             onInput={(e) => setAboutText(e.target.value)}
