@@ -10,6 +10,7 @@ function Education({ handleInputValue, educationData }) {
             type="text"
             id="school"
             className="input-styling"
+            autoComplete="off"
             value={educationData.school}
             onChange={(e) =>
               handleInputValue("education", "school", e.target.value)
@@ -24,6 +25,7 @@ function Education({ handleInputValue, educationData }) {
             type="text"
             id="location"
             className="input-styling"
+            autoComplete="off"
             value={educationData.location}
             onChange={(e) =>
               handleInputValue("education", "location", e.target.value)
@@ -41,6 +43,7 @@ function Education({ handleInputValue, educationData }) {
             type="text"
             id="degree"
             className="input-styling"
+            autoComplete="off"
             value={educationData.degree}
             onChange={(e) =>
               handleInputValue("education", "degree", e.target.value)
@@ -56,6 +59,7 @@ function Education({ handleInputValue, educationData }) {
               type="date"
               id="startDate"
               className="input-styling"
+              autoComplete="off"
               value={educationData.startDate}
               onChange={(e) =>
                 handleInputValue("education", "startDate", e.target.value)
@@ -70,6 +74,7 @@ function Education({ handleInputValue, educationData }) {
               type="date"
               id="endDate"
               className="input-styling"
+              autoComplete="off"
               value={educationData.endDate}
               onChange={(e) =>
                 handleInputValue("education", "endDate", e.target.value)

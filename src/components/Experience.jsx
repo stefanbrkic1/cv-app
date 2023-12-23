@@ -10,6 +10,7 @@ function Experience({ handleInputValue, experienceData }) {
             type="text"
             id="companyName"
             className="input-styling"
+            autoComplete="off"
             value={experienceData.companyName}
             onChange={(e) =>
               handleInputValue("experience", "companyName", e.target.value)
@@ -24,6 +25,7 @@ function Experience({ handleInputValue, experienceData }) {
             type="text"
             id="companyLocation"
             className="input-styling"
+            autoComplete="off"
             value={experienceData.location}
             onChange={(e) =>
               handleInputValue("experience", "location", e.target.value)
@@ -41,6 +43,7 @@ function Experience({ handleInputValue, experienceData }) {
             type="text"
             id="position"
             className="input-styling"
+            autoComplete="off"
             value={experienceData.positionTitle}
             onChange={(e) =>
               handleInputValue("experience", "positionTitle", e.target.value)
@@ -56,6 +59,7 @@ function Experience({ handleInputValue, experienceData }) {
               type="date"
               id="companyStartDate"
               className="input-styling"
+              autoComplete="off"
               value={experienceData.startDate}
               onChange={(e) =>
                 handleInputValue("experience", "startDate", e.target.value)
@@ -70,6 +74,7 @@ function Experience({ handleInputValue, experienceData }) {
               type="date"
               id="companyEndDate"
               className="input-styling"
+              autoComplete="off"
               value={experienceData.endDate}
               onChange={(e) =>
                 handleInputValue("experience", "endDate", e.target.value)

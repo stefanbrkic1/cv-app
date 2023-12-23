@@ -11,6 +11,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             id="fullname"
             className="input-styling"
             value={personalDetailsData.fullName}
+            autoComplete="off"
             onChange={(e) =>
               handleInputValue("personalDetails", "fullName", e.target.value)
             }
@@ -24,6 +25,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             type="email"
             id="email"
             className="input-styling"
+            autoComplete="off"
             value={personalDetailsData.email}
             onChange={(e) =>
               handleInputValue("personalDetails", "email", e.target.value)
@@ -41,6 +43,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             type="text"
             id="address"
             className="input-styling"
+            autoComplete="off"
             value={personalDetailsData.address}
             onChange={(e) =>
               handleInputValue("personalDetails", "address", e.target.value)
@@ -55,6 +58,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             type="tel"
             id="phone"
             className="input-styling"
+            autoComplete="off"
             value={personalDetailsData.phoneNumber}
             onChange={(e) =>
               handleInputValue("personalDetails", "phoneNumber", e.target.value)
