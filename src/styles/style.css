@@ -107,6 +107,59 @@ body {
   overflow: hidden;
 }
 
+.resume-exporting {
+  background-color: white;
+  width: 210mm;
+  height: 296mm;
+  overflow: hidden;
+}
+
+.resume-exporting .fullname {
+  font-size: 25rem;
+}
+.resume-exporting .position-title {
+  font-size: 20rem;
+}
+.resume-exporting .image-container {
+  width: 120px;
+  height: 120px;
+}
+.resume-exporting .resume-header-right {
+  font-size: 16rem;
+  gap: 18px;
+}
+.resume-exporting .email-icon {
+  width: 20px;
+  height: 20px;
+}
+.resume-exporting .address-icon {
+  width: 20px;
+  height: 20px;
+}
+.resume-exporting .phone-icon {
+  width: 20px;
+  height: 20px;
+}
+.resume-exporting .heading-title {
+  font-size: 21rem;
+}
+.resume-exporting .resume-section-content {
+  font-size: 19rem;
+}
+.resume-exporting .degree-resume {
+  font-size: 17rem;
+}
+.resume-exporting .resume-footer {
+  font-size: 17rem;
+  height: 60px;
+}
+.resume-exporting .resume-header {
+  padding: 40px 20px;
+}
+.resume-exporting .school-date {
+  font-size: 17rem;
+}
+
 .header,
 .footer {
   font-size: 17rem;
@@ -617,6 +670,7 @@ a {
   align-items: center;
   font-size: 12rem;
   color: var(--text-light);
+  font-weight: bold;
 }
 
 .customize {

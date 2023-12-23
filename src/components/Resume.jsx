@@ -6,7 +6,7 @@ function Resume({
   color,
 }) {
   return (
-    <div className="resume">
+    <div className="resume" id="resumePreview">
       {/*Resume Header Section*/}
       <div className="resume-header" style={{ backgroundColor: color }}>
         <div className="resume-header-left">

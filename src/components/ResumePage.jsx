@@ -3,6 +3,7 @@ import PersonalDetails from "./PersonalDetails";
 import Education from "./Education";
 import Experience from "./Experience";
 import Resume from "./Resume";
+import html2pdf from "html2pdf.js";
 
 function ResumePage({ handleContent }) {
   const [personalDropdown, setPersonalDropdown] = useState(1);
@@ -127,6 +128,29 @@ function ResumePage({ handleContent }) {
     aboutTextInput.value = "Write about yourself...";
   }
 
+  function handleExport() {
+    const resume = document.getElementById("resumePreview");
+
+    resume.classList.remove("resume");
+    resume.classList.add("resume-exporting");
+
+    // Configuration for html2pdf
+    const options = {
+      margin: 0,
+      filename: "resumify.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 1 },
+      jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+    };
+
+    html2pdf().set(options).from(resume).save();
+
+    setTimeout(() => {
+      resume.classList.remove("resume-exporting");
+      resume.classList.add("resume");
+    }, 0);
+  }
+
   return (
     <div className="resume-container">
       <section className="container-left">
@@ -146,7 +170,7 @@ function ResumePage({ handleContent }) {
               <div className="clear-icon"></div>
               <div className="clear-text">Clear</div>
             </button>
-            <button className="download-btn">
+            <button className="download-btn" onClick={handleExport}>
               PDF<div className="download-icon"></div>
             </button>
           </div>
