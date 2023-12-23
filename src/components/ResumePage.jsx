@@ -63,6 +63,7 @@ function ResumePage() {
     }
   }
 
+  // Set all values to default example values
   function loadExample() {
     setPersonalDetailsData({
       fullName: "Stefan Brkic",
@@ -91,7 +92,38 @@ function ResumePage() {
       "Results-driven and highly motivated professional with a proven track record in [Your Industry/Field]. Possessing a unique blend of technical expertise, strategic thinking, and effective communication skills, I am dedicated to delivering outstanding results in dynamic and challenging environments. With a passion for [Key Interest or Skill], I consistently strive for excellence and thrive on tackling new challenges. Known for my collaborative approach, adaptability, and commitment to achieving organizational goals, I am confident in my ability to contribute positively to any team."
     );
 
-    aboutTextInput.value = aboutText;
+    aboutTextInput.value =
+      "Results-driven and highly motivated professional with a proven track record in [Your Industry/Field]. Possessing a unique blend of technical expertise, strategic thinking, and effective communication skills, I am dedicated to delivering outstanding results in dynamic and challenging environments. With a passion for [Key Interest or Skill], I consistently strive for excellence and thrive on tackling new challenges. Known for my collaborative approach, adaptability, and commitment to achieving organizational goals, I am confident in my ability to contribute positively to any team.";
+  }
+
+  // Set all values to empty
+  function clearResume() {
+    setPersonalDetailsData({
+      fullName: "",
+      email: "",
+      phoneNumber: "",
+      address: "",
+    });
+
+    setEducationData({
+      school: "",
+      degree: "",
+      location: "",
+      startDate: "",
+      endDate: "",
+    });
+
+    setExperienceData({
+      companyName: "",
+      positionTitle: "",
+      location: "",
+      startDate: "",
+      endDate: "",
+    });
+
+    setAboutText("");
+
+    aboutTextInput.value = "";
   }
 
   return (
@@ -107,8 +139,9 @@ function ResumePage() {
               <div className="load-icon"></div>
               <div className="load-text">Example</div>
             </button>
-            <button className="clear-btn">
-              Clear <div className="clear-icon"></div>
+            <button className="clear-btn" onClick={clearResume}>
+              <div className="clear-icon"></div>
+              <div className="clear-text">Clear</div>
             </button>
             <button className="download-btn">
               PDF<div className="download-icon"></div>

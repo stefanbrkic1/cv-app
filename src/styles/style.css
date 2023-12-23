@@ -314,7 +314,7 @@ a {
 }
 
 .clear-btn {
-  padding: 6px 20px;
+  padding: 6px 10px 6px 10px;
   appearance: none;
   border: none;
   border-radius: 6px;
@@ -325,6 +325,16 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5px;
+}
+
+.clear-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../assets/img/clear.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .download-btn {
