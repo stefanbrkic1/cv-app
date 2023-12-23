@@ -231,6 +231,15 @@ a {
   background-size: contain;
 }
 
+.brush-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../assets/img/brush.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .user-icon {
   width: 20px;
   height: 20px;
@@ -432,7 +441,6 @@ a {
 .resume-header {
   width: 100%;
   padding: 20px;
-  background-color: var(--primary-color);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -536,7 +544,6 @@ a {
 .heading-line {
   width: 5px;
   height: 25px;
-  background-color: var(--primary-color);
 }
 
 .heading-title {
@@ -577,7 +584,6 @@ a {
 .resume-footer {
   width: 100%;
   height: 30px;
-  background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -586,6 +592,51 @@ a {
   align-items: center;
   font-size: 12rem;
   color: var(--text-color);
+}
+
+.customize {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.color-container {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.color-container:hover {
+  transform: scale(1.1);
+}
+
+.blue {
+  background-color: var(--primary-color);
+}
+
+.orange {
+  background-color: #f4832c;
+}
+
+.purple {
+  background-color: #966fd6;
+}
+
+.green {
+  background-color: #39c56a;
+}
+
+.pink {
+  background-color: #ffb0b0;
 }
 
 /*Media Queries*/

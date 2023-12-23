@@ -3,11 +3,12 @@ function Resume({
   educationData,
   experienceData,
   aboutText,
+  color,
 }) {
   return (
     <div className="resume">
       {/*Resume Header Section*/}
-      <div className="resume-header">
+      <div className="resume-header" style={{ backgroundColor: color }}>
         <div className="resume-header-left">
           <div className="image-container"></div>
           <div className="flex-column">
@@ -38,7 +39,10 @@ function Resume({
         {/*Education Section*/}
         <div className="resume-section">
           <div className="resume-heading">
-            <div className="heading-line"></div>
+            <div
+              className="heading-line"
+              style={{ backgroundColor: color }}
+            ></div>
             <div className="heading-title">EDUCATION</div>
           </div>
           <div className="resume-section-content">
@@ -57,7 +61,10 @@ function Resume({
         {/*Experience Section*/}
         <div className="resume-section">
           <div className="resume-heading">
-            <div className="heading-line"></div>
+            <div
+              className="heading-line"
+              style={{ backgroundColor: color }}
+            ></div>
             <div className="heading-title">EXPERIENCE</div>
           </div>
           <div className="resume-section-content">
@@ -80,7 +87,10 @@ function Resume({
         {/*About Me Section*/}
         <div className="resume-section">
           <div className="resume-heading">
-            <div className="heading-line"></div>
+            <div
+              className="heading-line"
+              style={{ backgroundColor: color }}
+            ></div>
             <div className="heading-title">ABOUT ME</div>
           </div>
           <div className="resume-section-content">{aboutText}</div>
@@ -88,7 +98,7 @@ function Resume({
       </div>
 
       {/*Footer section */}
-      <div className="resume-footer">
+      <div className="resume-footer" style={{ backgroundColor: color }}>
         <div className="resume-footer-text">
           Copyright &copy; {personalDetailsData.fullName}
         </div>

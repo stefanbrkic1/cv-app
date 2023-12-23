@@ -9,6 +9,7 @@ function ResumePage() {
   const [educationDropdown, setEducationDropdown] = useState(0);
   const [experienceDropdown, setExperienceDropdown] = useState(0);
   const [aboutText, setAboutText] = useState("");
+  const [color, setColor] = useState("#5281ce");
 
   function handleDropdownClick(caller) {
     if (caller === "personalDropdown") {
@@ -221,6 +222,36 @@ function ResumePage() {
             Write about yourself...
           </textarea>
         </div>
+
+        {/*Styling Section */}
+        <div className="customize">
+          <div className="dropdown-left">
+            <div className="brush-icon"></div>
+            <div className="dropdown-text">Customize</div>
+          </div>
+          <div className="dropdown-right">
+            <div
+              className="color-container blue"
+              onClick={() => setColor("#5281ce")}
+            ></div>
+            <div
+              className="color-container green"
+              onClick={() => setColor("#39c56a")}
+            ></div>
+            <div
+              className="color-container orange"
+              onClick={() => setColor("#F4832C")}
+            ></div>
+            <div
+              className="color-container purple"
+              onClick={() => setColor("#966FD6")}
+            ></div>
+            <div
+              className="color-container pink"
+              onClick={() => setColor("#FFB0B0")}
+            ></div>
+          </div>
+        </div>
       </section>
 
       {/* Resume displayer section */}
@@ -230,6 +261,7 @@ function ResumePage() {
           educationData={educationData}
           experienceData={experienceData}
           aboutText={aboutText}
+          color={color}
         />
       </section>
     </div>
