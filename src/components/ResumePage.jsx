@@ -123,7 +123,7 @@ function ResumePage() {
 
     setAboutText("");
 
-    aboutTextInput.value = "";
+    aboutTextInput.value = "Write about yourself...";
   }
 
   return (
@@ -218,7 +218,7 @@ function ResumePage() {
             rows="10"
             onInput={(e) => setAboutText(e.target.value)}
           >
-            Write about yourself
+            Write about yourself...
           </textarea>
         </div>
       </section>
