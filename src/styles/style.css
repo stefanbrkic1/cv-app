@@ -76,7 +76,6 @@ body {
   height: 100%;
   padding: 40px 50px 40px 50px;
   display: flex;
-  justify-content: baseline;
   align-items: center;
   flex-direction: column;
   overflow-y: scroll;
@@ -643,6 +642,10 @@ a {
 
 /* Phones */
 @media only screen and (max-width: 767px) {
+  html,
+  body {
+    height: 100svh;
+  }
   .entry-container {
     padding: 0px 15px;
   }
@@ -658,9 +661,116 @@ a {
   .entry-main {
     margin-bottom: 50%;
   }
+  .resume-container {
+    height: 100svh;
+    display: block;
+    background-color: red;
+  }
+  .container-left {
+    padding: 20px 15px 50px 15px;
+    overflow-y: visible;
+    height: auto;
+  }
+  .container-right {
+    height: 800px;
+  }
+  .nav-bar {
+    justify-content: center;
+    padding: 10px;
+  }
+  .nav-left {
+    display: none;
+  }
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .download-btn {
+    flex: 1;
+    padding: 10px 14px 10px 14px;
+  }
+  .clear-btn {
+    flex: 1;
+    padding: 10px 14px 10px 14px;
+  }
+  .load-example-btn {
+    flex: 1;
+    padding: 10px 14px 10px 14px;
+  }
+  .flex {
+    display: block;
+  }
+  .pb-5 {
+    padding-bottom: 0px;
+  }
+  .input-field {
+    padding-bottom: 23px;
+  }
+  .about-section {
+    height: 400px;
+  }
+  .resume {
+    border-radius: 0px;
+  }
+  .color-container {
+    width: 27px;
+    height: 27px;
+  }
 }
 
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Your styles for tablets go here */
+  html,
+  body {
+    height: 100svh;
+  }
+  .entry-container {
+    padding: 0px 15px;
+  }
+  .heading-text {
+    font-size: 60rem;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .heading-subtext {
+    font-size: 21rem;
+    text-align: center;
+  }
+  .start-btn {
+    font-size: 26rem;
+  }
+  .entry-main {
+    margin-bottom: 50%;
+  }
+  .resume-container {
+    height: 100svh;
+    display: block;
+    background-color: red;
+  }
+  .container-left {
+    padding: 20px 15px 50px 15px;
+    overflow-y: visible;
+    height: auto;
+  }
+  .container-right {
+    height: 800px;
+  }
+  .download-btn {
+    flex: 1;
+    padding: 10px 16px 10px 16px;
+  }
+  .clear-btn {
+    flex: 1;
+    padding: 10px 16px 10px 16px;
+  }
+  .load-example-btn {
+    flex: 1;
+    padding: 10px 16px 10px 16px;
+  }
+  .input-field {
+    padding-bottom: 23px;
+  }
+  .resume {
+    border-radius: 0px;
+  }
 }
