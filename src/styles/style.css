@@ -357,7 +357,7 @@ a {
   font-weight: 1000;
   font-family: var(--heading-font-bold);
   border-radius: 6px;
-  font-size: 22rem;
+  font-size: 23rem;
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -718,6 +718,10 @@ a {
   background-color: #ffb0b0;
 }
 
+.logo-small-container {
+  display: none;
+}
+
 /*Media Queries*/
 
 /* Phones */
@@ -795,6 +799,27 @@ a {
   .color-container {
     width: 27px;
     height: 27px;
+  }
+  .logo-small-container {
+    display: block;
+    background-color: var(--higher-order-background-color);
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  .logo-small-screens {
+    font-weight: 1000;
+    font-family: var(--heading-font-bold);
+    font-size: 25rem;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    background-color: var(--higher-order-background-color);
   }
 }
 
