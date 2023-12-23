@@ -86,6 +86,13 @@ function Resume({
           <div className="resume-section-content">{aboutText}</div>
         </div>
       </div>
+
+      {/*Footer section */}
+      <div className="resume-footer">
+        <div className="resume-footer-text">
+          Copyright &copy; {personalDetailsData.fullName}
+        </div>
+      </div>
     </div>
   );
 }
