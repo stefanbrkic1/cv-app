@@ -179,6 +179,7 @@ body {
 
 .resumify-text {
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background-clip: text; /* Standard property */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -359,6 +360,7 @@ a {
   border-radius: 6px;
   font-size: 23rem;
   background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  background-clip: text; /* Standard property */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
@@ -816,6 +818,7 @@ a {
     font-family: var(--heading-font-bold);
     font-size: 25rem;
     background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-clip: text; /* Standard property */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
