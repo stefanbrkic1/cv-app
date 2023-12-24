@@ -1,4 +1,24 @@
 function PersonalDetails({ handleInputValue, personalDetailsData }) {
+  function handleFileUpload() {
+    var input = document.getElementById("userImage");
+    var userImageContainer = document.getElementById("userImageContainer");
+
+    // Make sure a file is selected
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        // Display the selected image
+        userImageContainer.innerHTML =
+          '<img src="' +
+          e.target.result +
+          '" alt="Image Preview" style="width: 100%; height: 100%;" />';
+      };
+
+      // Read the selected file as a data URL
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
   return (
     <div className="dropdown-content">
       <div className="flex pb-5">
@@ -65,6 +85,20 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             }
           />
         </div>
+      </div>
+
+      {/*Add image section */}
+      <div className="add-img">
+        <label htmlFor="userImage" className="label-image">
+          <div className="image-icon"></div>
+          <div className="image-text">Add Image</div>
+        </label>
+        <input
+          type="file"
+          id="userImage"
+          accept="image/*"
+          onChange={handleFileUpload}
+        />
       </div>
     </div>
   );

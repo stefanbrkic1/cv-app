@@ -10,7 +10,7 @@ function Resume({
       {/*Resume Header Section*/}
       <div className="resume-header" style={{ backgroundColor: color }}>
         <div className="resume-header-left">
-          <div className="image-container"></div>
+          <div className="image-container" id="userImageContainer"></div>
           <div className="flex-column">
             <div className="fullname">{personalDetailsData.fullName}</div>
             <div className="position-title">{experienceData.positionTitle}</div>
