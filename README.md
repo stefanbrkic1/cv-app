@@ -4,7 +4,7 @@
 <div align="center">
 <img src="./src/assets/img/resumify-icon-logo.png" alt="logo" width="360">
 <br>
-**Crafting Careers, One Resume at a Time.**
+Crafting Careers, One Resume at a Time.
 <br>
 <br>
   <p>
