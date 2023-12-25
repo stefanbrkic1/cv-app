@@ -8,7 +8,7 @@ Crafting Careers, One Resume at a Time.
 <br>
 <br>
   <p>
-    <a href="https://stefanbrkic1.github.io/cv-app/">View Demo</a>
+    <a href="https://resumify-phi.vercel.app/">View Demo</a>
     &nbsp;·&nbsp;
     <a href="https://github.com/stefanbrkic1/cv-app/issues">Report Bug</a>
     &nbsp;·&nbsp;
