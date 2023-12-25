@@ -6,9 +6,10 @@ function EntryPage({ handleContent }) {
 
       {/* Main content section */}
       <main className="entry-main">
-        <h1 className="heading-text">
-          Welcome to <span className="resumify-text">Resumify</span>
-        </h1>
+        <div className="heading-flex">
+          <h1 className="heading-text">Welcome to</h1>
+          <div className="resumify-text"></div>
+        </div>
         <h2 className="heading-subtext">
           Build beautiful resumes easily with our app and land your dream job
         </h2>

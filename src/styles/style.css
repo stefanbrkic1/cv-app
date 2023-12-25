@@ -178,10 +178,19 @@ body {
 }
 
 .resumify-text {
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  background-clip: text; /* Standard property */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-image: url(../assets/img/resumify-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 340px;
+  height: 200px;
+}
+
+.heading-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 a {
@@ -355,14 +364,12 @@ a {
 }
 
 .logo {
-  font-weight: 1000;
-  font-family: var(--heading-font-bold);
-  border-radius: 6px;
-  font-size: 23rem;
-  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-  background-clip: text; /* Standard property */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  width: 135px;
+  height: 30px;
+  background-image: url(/src/assets/img/resumify-icon-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
 }
 
@@ -855,15 +862,13 @@ a {
     margin-bottom: 10px;
   }
   .logo-small-screens {
-    font-weight: 1000;
-    font-family: var(--heading-font-bold);
-    font-size: 25rem;
-    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
-    background-clip: text; /* Standard property */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 135px;
+    height: 30px;
+    background-image: url(/src/assets/img/resumify-icon-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     cursor: pointer;
-    background-color: var(--higher-order-background-color);
   }
 }
 

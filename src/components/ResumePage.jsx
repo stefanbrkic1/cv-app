@@ -156,14 +156,12 @@ function ResumePage({ handleContent }) {
       <section className="container-left">
         {/* Navbar section */}
         <div className="logo-small-container" onClick={handleContent}>
-          <div className="logo-small-screens">Resumify</div>
+          <div className="logo-small-screens"></div>
         </div>
 
         <nav className="nav-bar">
           <div className="nav-left">
-            <div className="logo" onClick={handleContent}>
-              Resumify
-            </div>
+            <div className="logo" onClick={handleContent}></div>
           </div>
           <div className="nav-right">
             <button className="load-example-btn" onClick={loadExample}>
