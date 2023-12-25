@@ -37,7 +37,6 @@ Crafting Careers, One Resume at a Time.
 **Welcome to Resumify: Your gateway to crafting professional success!**
 
 Resumify is not just a CV/Resume builder; it's your personalized career architect, designed to elevate your professional narrative. Seamlessly blending innovation with simplicity, Resumify empowers you to create compelling resumes that stand out in today's competitive job market.
-
 Elevate your resume, unlock opportunities, and take the next step toward your professional aspirations. Your success story begins with Resumify – where your resume becomes a powerful tool in shaping your future. 🌐📄✨
 
 <br>
@@ -46,7 +45,7 @@ Elevate your resume, unlock opportunities, and take the next step toward your pr
 
 <div align=center>
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)&nbsp;&nbsp;![JavaScript](https://img.shields.io/badge/ES6%20Modules%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;&nbsp;![Vite](https://img.shields.io/badge/vite-%238DD6F9.svg?style=for-the-badge&logo=vite&logoColor=white) &nbsp;&nbsp;![html-minifier](https://img.shields.io/badge/html%20minifier-A90533?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css_minifier-2C2D72.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)&nbsp;&nbsp;![JavaScript](https://img.shields.io/badge/ES6%20Modules%20-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) &nbsp;&nbsp;![Vite](https://img.shields.io/badge/vite-%23E34F26.svg?style=for-the-badge&logo=vite&logoColor=white) &nbsp;&nbsp;![html-minifier](https://img.shields.io/badge/html%20minifier-A90533?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;![CSS3](https://img.shields.io/badge/css_minifier-2C2D72.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 </div>
 
