@@ -1,7 +1,7 @@
 function PersonalDetails({ handleInputValue, personalDetailsData }) {
   function handleFileUpload() {
-    var input = document.getElementById("userImage");
-    var userImageContainer = document.getElementById("userImageContainer");
+    var input = document.getElementById('userImage');
+    var userImageContainer = document.getElementById('userImageContainer');
 
     // Make sure a file is selected
     if (input.files && input.files[0]) {
@@ -33,7 +33,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             value={personalDetailsData.fullName}
             autoComplete="off"
             onChange={(e) =>
-              handleInputValue("personalDetails", "fullName", e.target.value)
+              handleInputValue('personalDetails', 'fullName', e.target.value)
             }
           />
         </div>
@@ -48,7 +48,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             autoComplete="off"
             value={personalDetailsData.email}
             onChange={(e) =>
-              handleInputValue("personalDetails", "email", e.target.value)
+              handleInputValue('personalDetails', 'email', e.target.value)
             }
           />
         </div>
@@ -66,7 +66,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             autoComplete="off"
             value={personalDetailsData.address}
             onChange={(e) =>
-              handleInputValue("personalDetails", "address", e.target.value)
+              handleInputValue('personalDetails', 'address', e.target.value)
             }
           />
         </div>
@@ -81,7 +81,7 @@ function PersonalDetails({ handleInputValue, personalDetailsData }) {
             autoComplete="off"
             value={personalDetailsData.phoneNumber}
             onChange={(e) =>
-              handleInputValue("personalDetails", "phoneNumber", e.target.value)
+              handleInputValue('personalDetails', 'phoneNumber', e.target.value)
             }
           />
         </div>

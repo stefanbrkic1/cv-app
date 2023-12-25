@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   src: url(../assets/fonts/Montserrat-Regular.ttf);
 }
 
@@ -14,8 +14,8 @@
   --background-color: #242424;
   --higher-order-background-color: #161717;
 
-  --primary-font-regular: "Montserrat", sans-serif;
-  --heading-font-bold: "Helvetica", sans-serif;
+  --primary-font-regular: 'Montserrat', sans-serif;
+  --heading-font-bold: 'Helvetica', sans-serif;
 }
 
 * {

@@ -13,7 +13,7 @@ function Experience({ handleInputValue, experienceData }) {
             autoComplete="off"
             value={experienceData.companyName}
             onChange={(e) =>
-              handleInputValue("experience", "companyName", e.target.value)
+              handleInputValue('experience', 'companyName', e.target.value)
             }
           />
         </div>
@@ -28,7 +28,7 @@ function Experience({ handleInputValue, experienceData }) {
             autoComplete="off"
             value={experienceData.location}
             onChange={(e) =>
-              handleInputValue("experience", "location", e.target.value)
+              handleInputValue('experience', 'location', e.target.value)
             }
           />
         </div>
@@ -46,7 +46,7 @@ function Experience({ handleInputValue, experienceData }) {
             autoComplete="off"
             value={experienceData.positionTitle}
             onChange={(e) =>
-              handleInputValue("experience", "positionTitle", e.target.value)
+              handleInputValue('experience', 'positionTitle', e.target.value)
             }
           />
         </div>
@@ -62,7 +62,7 @@ function Experience({ handleInputValue, experienceData }) {
               autoComplete="off"
               value={experienceData.startDate}
               onChange={(e) =>
-                handleInputValue("experience", "startDate", e.target.value)
+                handleInputValue('experience', 'startDate', e.target.value)
               }
             />
           </div>
@@ -77,7 +77,7 @@ function Experience({ handleInputValue, experienceData }) {
               autoComplete="off"
               value={experienceData.endDate}
               onChange={(e) =>
-                handleInputValue("experience", "endDate", e.target.value)
+                handleInputValue('experience', 'endDate', e.target.value)
               }
             />
           </div>

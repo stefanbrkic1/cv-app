@@ -13,7 +13,7 @@ function Education({ handleInputValue, educationData }) {
             autoComplete="off"
             value={educationData.school}
             onChange={(e) =>
-              handleInputValue("education", "school", e.target.value)
+              handleInputValue('education', 'school', e.target.value)
             }
           />
         </div>
@@ -28,7 +28,7 @@ function Education({ handleInputValue, educationData }) {
             autoComplete="off"
             value={educationData.location}
             onChange={(e) =>
-              handleInputValue("education", "location", e.target.value)
+              handleInputValue('education', 'location', e.target.value)
             }
           />
         </div>
@@ -46,7 +46,7 @@ function Education({ handleInputValue, educationData }) {
             autoComplete="off"
             value={educationData.degree}
             onChange={(e) =>
-              handleInputValue("education", "degree", e.target.value)
+              handleInputValue('education', 'degree', e.target.value)
             }
           />
         </div>
@@ -62,7 +62,7 @@ function Education({ handleInputValue, educationData }) {
               autoComplete="off"
               value={educationData.startDate}
               onChange={(e) =>
-                handleInputValue("education", "startDate", e.target.value)
+                handleInputValue('education', 'startDate', e.target.value)
               }
             />
           </div>
@@ -77,7 +77,7 @@ function Education({ handleInputValue, educationData }) {
               autoComplete="off"
               value={educationData.endDate}
               onChange={(e) =>
-                handleInputValue("education", "endDate", e.target.value)
+                handleInputValue('education', 'endDate', e.target.value)
               }
             />
           </div>

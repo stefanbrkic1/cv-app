@@ -1,6 +1,6 @@
-import { useState } from "react";
-import EntryPage from "./EntryPage";
-import ResumePage from "./ResumePage";
+import { useState } from 'react';
+import EntryPage from './EntryPage';
+import ResumePage from './ResumePage';
 
 function App() {
   const [content, setContent] = useState(0);

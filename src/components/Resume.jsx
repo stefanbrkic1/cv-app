@@ -47,13 +47,13 @@ function Resume({
           </div>
           <div className="resume-section-content">
             <div className="school-resume">
-              {educationData.school} {educationData.location !== "" && ", "}
+              {educationData.school} {educationData.location !== '' && ', '}
               <span className="school-location">{educationData.location}</span>
             </div>
             <div className="degree-resume">{educationData.degree}</div>
             <div className="school-date">
-              {educationData.startDate}{" "}
-              {educationData.startDate !== "" && " / "} {educationData.endDate}
+              {educationData.startDate}{' '}
+              {educationData.startDate !== '' && ' / '} {educationData.endDate}
             </div>
           </div>
         </div>
@@ -71,14 +71,14 @@ function Resume({
             <div className="school-resume">
               {experienceData.companyName}
               <span className="school-location">
-                {experienceData.location !== "" && ", "}
+                {experienceData.location !== '' && ', '}
                 {experienceData.location}
               </span>
             </div>
             <div className="degree-resume">{experienceData.positionTitle}</div>
             <div className="school-date">
               {experienceData.startDate}
-              {experienceData.startDate !== "" && " / "}{" "}
+              {experienceData.startDate !== '' && ' / '}{' '}
               {experienceData.endDate}
             </div>
           </div>
